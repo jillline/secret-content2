@@ -20,7 +20,7 @@
   <button id="btnShare" onclick="sendShare()">Share Secret Contents</button>
   <button id="btnLogin" onclick="liff.login()">Log In</button>
   <button id="btnLogOut" onclick="logOut()">Log Out</button>
-  <script src=" https://static.line-scdn.net/liff/edge/versions/2.9.0/sdk.js"></script>
+  <script src=" https://static.line-scdn.net/liff/edge/versions/2.12.0/sdk.js"></script>
   <script>
     async function sendShare() {
       const result = await liff.shareTargetPicker([
@@ -35,7 +35,73 @@
       "hero": {
         "type": "image",
         "size": "full",
-        "aspectRatio": "20:13",
+        "aspectRatio": "20:20",
+        "aspectMode": "cover",
+        "url": "https://drive.google.com/uc?id=1mRWQMpJprirKovTPrRjPwUCQsROxpEUO"
+      },
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "spacing": "sm",
+        "contents": [
+          {
+            "type": "text",
+            "text": "ภาพใส่ลิงค์เลื่อนดูได้",
+            "wrap": true,
+            "weight": "bold",
+            "size": "xl"
+          },
+          {
+            "type": "box",
+            "layout": "baseline",
+            "contents": [
+              {
+                "type": "text",
+                "text": "แชร์ได้ทุกคน",
+                "wrap": true,
+                "weight": "bold",
+                "size": "xl",
+                "flex": 0
+              }
+            ]
+          }
+        ],
+        "margin": "none"
+      },
+      "footer": {
+        "type": "box",
+        "layout": "vertical",
+        "spacing": "sm",
+        "contents": [
+          {
+            "type": "button",
+            "style": "primary",
+            "action": {
+              "type": "uri",
+              "label": "ซื้อเลย",
+              "uri": "https://shop.line.me/@774rimte/product/321099811"
+            }
+          },
+          {
+            "type": "text",
+            "text": "เลื่อนไปด้านซ้ายเพื่อดูรูปต่อไป",
+            "margin": "md",
+            "style": "italic",
+            "weight": "bold",
+            "align": "center",
+            "gravity": "center",
+            "adjustMode": "shrink-to-fit",
+            "color": "#cfe0f0"
+          }
+        ]
+      }
+    },
+    {
+      "type": "bubble",
+      "hero": {
+        "type": "image",
+        "size": "full",
+        "aspectRatio": "20:20",
         "aspectMode": "cover",
         "url": "https://drive.google.com/uc?id=1JzoL4DzS8ymF9CuY75E-6Lo06yFxCsMu"
       },
@@ -78,7 +144,7 @@
             "style": "primary",
             "action": {
               "type": "uri",
-              "label": "ซื้อเลย",
+              "label": "ดูสินค้า",
               "uri": "https://shop.line.me/@774rimte/product/320662332"
             }
           },
@@ -101,7 +167,7 @@
       "hero": {
         "type": "image",
         "size": "full",
-        "aspectRatio": "20:13",
+        "aspectRatio": "20:20",
         "aspectMode": "cover",
         "url": "https://drive.google.com/uc?id=1AybKnKOzW5SCHNC3Ktek72AVto5dS_5B"
       },
@@ -167,7 +233,7 @@
       "hero": {
         "type": "image",
         "size": "full",
-        "aspectRatio": "20:13",
+        "aspectRatio": "20:20",
         "aspectMode": "cover",
         "url": "https://drive.google.com/uc?id=1jjDmFAx3HeYliwNLquXuMQQt31chUiJ3"
       },
@@ -178,7 +244,7 @@
         "contents": [
           {
             "type": "text",
-            "text": "สร้างบัญชีทั่วไป 1 ,ไลน์มายช็อป 1 ",
+            "text": "สร้างบัญชีทั่วไป 1 ,ไลน์มายช็อป 1",
             "wrap": true,
             "weight": "bold",
             "size": "xl"
@@ -212,72 +278,6 @@
               "type": "uri",
               "label": "ดูสินค้า",
               "uri": "https://shop.line.me/@774rimte/product/320766426"
-            }
-          },
-          {
-            "type": "text",
-            "text": "เลื่อนไปด้านซ้ายเพื่อดูรูปต่อไป",
-            "margin": "md",
-            "style": "italic",
-            "weight": "bold",
-            "align": "center",
-            "gravity": "center",
-            "adjustMode": "shrink-to-fit",
-            "color": "#cfe0f0"
-          }
-        ]
-      }
-    },
-    {
-      "type": "bubble",
-      "hero": {
-        "type": "image",
-        "size": "full",
-        "aspectRatio": "20:13",
-        "aspectMode": "cover",
-        "url": "https://drive.google.com/uc?id=1jABij67S_CUR_f5A1eomVOC6Mh9w_muk"
-      },
-      "body": {
-        "type": "box",
-        "layout": "vertical",
-        "spacing": "sm",
-        "contents": [
-          {
-            "type": "text",
-            "text": "สร้างบัญชีทั่วไป 1 บัญชี",
-            "wrap": true,
-            "weight": "bold",
-            "size": "xl"
-          },
-          {
-            "type": "box",
-            "layout": "baseline",
-            "contents": [
-              {
-                "type": "text",
-                "text": "ริชเมนู 1 แบบ",
-                "wrap": true,
-                "weight": "bold",
-                "size": "xl",
-                "flex": 0
-              }
-            ]
-          }
-        ],
-        "margin": "none"
-      },
-      "footer": {
-        "type": "box",
-        "layout": "vertical",
-        "spacing": "sm",
-        "contents": [
-          {
-            "type": "button",
-            "style": "primary",
-            "action": {
-              "type": "uri",
-              "label": "ดูสินค้า",
-              "uri": "https://shop.line.me/@774rimte/product/320766380"
             }
           },
           {
