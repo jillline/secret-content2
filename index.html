@@ -1,26 +1,24 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0,viewport-fit=cover">
   <title>My LIFF App</title>
+  <div align="center">
   <style>
-  body {padding: 25px;background-color: #969595;color: yellow;}
-  .button {width: 60%;padding: 8px 0;margin: 2px auto;font-size: 16px;border-radius: 10px;
-  background-color: #ffd86c;}
-  button {width: 100%;padding: 8px 0;margin: 2px auto;font-size: 20px;border-radius: 12px;
-  background-color: #ec99ff;}
- </style>
-  <style>
-    body { padding: 256px }
-    button { display: none; width: 80%; padding: 16px 0; margin: 16px auto }
+   body {padding: 25px;background-color: #46abb0;color: yellow;}
+   .button {width: 60%;padding: 8px 0;margin: 2px auto;font-size: 16px;border-radius: 10px;
+   background-color: #ffd86c;}
+   button {width: 100%;padding: 8px 0;margin: 2px auto;font-size: 20px;border-radius: 12px;
+   background-color: #d933ff;}
   </style>
+  </div>
 </head>
 <body>
   <button id="btnShare" onclick="sendShare()">Share Secret Contents</button>
   <button id="btnLogin" onclick="liff.login()">Log In</button>
   <button id="btnLogOut" onclick="logOut()">Log Out</button>
-  <script src=" https://static.line-scdn.net/liff/edge/versions/2.9.0/sdk.js"></script>
+  <script src=" https://static.line-scdn.net/liff/edge/versions/2.12.0/sdk.js"></script>
   <script>
     async function sendShare() {
       const result = await liff.shareTargetPicker([
